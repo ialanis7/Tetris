@@ -1,6 +1,6 @@
 ﻿namespace Tetris
 {
-	class GameGrid
+	public class GameGrid
 	{
 		private readonly int[,] grid;
 
@@ -87,8 +87,8 @@
 				{
 					MoveRowDown(r, cleared);
 				}
-				return cleared;
 			}
+			return cleared;
 		}
 	}
 }

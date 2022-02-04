@@ -31,7 +31,7 @@ namespace Tetris
 		public Block GetAndUpdate()
 		{
 			Block block = NextBlock;
-
+			//Make sure we don't get the same block up next
 			do
 			{
 				NextBlock = RandomBlock();

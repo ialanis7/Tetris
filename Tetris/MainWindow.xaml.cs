@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Tetris
 {
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
 	public partial class MainWindow : Window
 	{
 		private readonly ImageSource[] tileImages = new ImageSource[]
@@ -45,6 +42,9 @@ namespace Tetris
 		};
 
 		private readonly Image[,] imageControls;
+		private readonly int maxDelay = 1000;
+		private readonly int minDelay = 75;
+		private readonly int delayDecrease = 25;
 
 		private GameState gameState = new GameState();
 
@@ -107,11 +107,36 @@ namespace Tetris
 			NextImage.Source = blockImages[next.Id];
 		}
 
+		private void DrawHeldBlock(Block heldBlock)
+		{
+			if (heldBlock == null)
+			{
+				HoldImage.Source = blockImages[0];
+			}
+			else
+			{
+				HoldImage.Source = blockImages[heldBlock.Id];
+			}
+		}
+
+		private void DrawGhostBlock(Block block)
+		{
+			int dropDistance = gameState.BlockDropDistance();
+
+			foreach (Position p in block.TilePositions())
+			{
+				imageControls[p.Row + dropDistance, p.Column].Opacity = 0.25;
+				imageControls[p.Row + dropDistance, p.Column].Source = tileImages[block.Id];
+			}
+		}
+
 		private void Draw(GameState gameState)
 		{
 			DrawGrid(gameState.GameGrid);
+			DrawGhostBlock(gameState.CurrentBlock);
 			DrawBlock(gameState.CurrentBlock);
 			DrawNextBlock(gameState.BlockQueue);
+			DrawHeldBlock(gameState.HeldBlock);
 			ScoreText.Text = $"Score: {gameState.Score}";
 		}
 
@@ -121,7 +146,8 @@ namespace Tetris
 
 			while (!gameState.GameOver)
 			{
-				await Task.Delay(500);
+				int delay = Math.Max(minDelay, maxDelay - (gameState.Score * delayDecrease));
+				await Task.Delay(delay);
 				gameState.MoveBlockDown();
 				Draw(gameState);
 			}
@@ -154,6 +180,11 @@ namespace Tetris
 				case Key.C:
 					gameState.HoldBlock();
 					break;
+				case Key.Space:
+					gameState.DropBlock();
+					break;
+				default:
+					return;
 			}
 			Draw(gameState);
 		}

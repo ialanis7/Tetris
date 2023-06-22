@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+C:/Users/ignac/source/repos/Tetris/Tetris/bin/Release/net5.0-windows/win-x64/publish/Tetris.exe filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+Tetris/bin/Release/net5.0-windows/win-x64/publish/Tetris.exe filter=lfs diff=lfs merge=lfs -text

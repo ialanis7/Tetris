@@ -1,0 +1,5 @@
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Release\net5.0-windows\publish\Tetris.exe
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Release\net5.0-windows\publish\Tetris.dll
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Release\net5.0-windows\publish\Tetris.deps.json
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Release\net5.0-windows\publish\Tetris.runtimeconfig.json
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Release\net5.0-windows\publish\Tetris.pdb

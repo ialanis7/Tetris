@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\.github\\workflows",
-    "\\Tetris"
+    "\\Tetris",
+    "\\Tetris\\bin\\Release\\net5.0-windows",
+    "\\Tetris\\bin\\Release\\net5.0-windows\\win-x64",
+    "\\Tetris\\obj"
   ],
   "PreviewInSolutionExplorer": false
 }

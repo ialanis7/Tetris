@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6jHj5/rzOekwygMC0QQUKNBQFcrykYYL/MTuoRneig+GDiJsqpntdIGSQw/q90Zg1pm3QHQQbgCkrcLIzaODew==",
+  "dgSpecHash": "xtltxjOpRLb0ZaQr0piXNfMH3UR7QWSiD4aVhwQulcfWI5q3Too7W1PuVKrgH19m9jmWNbknCzdQzIXl28ILlw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ignac\\source\\repos\\Tetris\\Tetris\\Tetris.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ignac\\.nuget\\packages\\ilrepack.lib.msbuild.task\\2.0.18.2\\ilrepack.lib.msbuild.task.2.0.18.2.nupkg.sha512",
     "C:\\Users\\ignac\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.17\\microsoft.netcore.app.runtime.win-x64.5.0.17.nupkg.sha512",
     "C:\\Users\\ignac\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.17\\microsoft.aspnetcore.app.runtime.win-x64.5.0.17.nupkg.sha512",
     "C:\\Users\\ignac\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.17\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.17.nupkg.sha512"

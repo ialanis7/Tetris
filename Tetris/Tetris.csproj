@@ -30,6 +30,29 @@
     <None Remove="Assets\TileRed.png" />
     <None Remove="Assets\TileYellow.png" />
   </ItemGroup>
+   
+
+  <ItemGroup>
+    <PackageReference Include="ILRepack.Lib.MSBuild.Task" Version="2.0.18.2" />
+  </ItemGroup>
+  
+  <!-- ILRepack -->
+    <Target Name="ILRepack" AfterTargets="Build">
+
+        <ItemGroup>
+            <InputAssemblies Include="$(OutputPath)\*.dll" />
+        </ItemGroup>
+
+        <ILRepack
+            Parallel="true"
+            Internalize="true"
+            InternalizeExclude="@(DoNotInternalizeAssemblies)"
+            InputAssemblies="@(InputAssemblies)"
+            TargetKind="Dll"
+            OutputFile="$(OutputPath)\$(AssemblyName).dll" />
+
+    </Target>
+    <!-- /ILRepack -->
 
   <ItemGroup>
     <Resource Include="Assets\Background.png" />

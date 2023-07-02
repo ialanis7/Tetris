@@ -19,6 +19,5 @@ C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\ref\T
 C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\Tetris.pdb
 C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\Tetris.genruntimeconfig.cache
 C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\Tetris.csproj.Fody.CopyLocal.cache
-C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\Tetris.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\Tetris.csproj.AssemblyReference.cache
-C:\Users\ignac\source\repos\Tetris\Tetris\obj\Debug\net5.0-windows\win-x64\refint\Tetris.dll
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Debug\net5.0-windows\win-x64\ref\Tetris.dll

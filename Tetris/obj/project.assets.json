@@ -1,12 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {},
-    "net5.0-windows7.0/win-x64": {}
+    "net5.0-windows7.0": {
+      "ILRepack.Lib.MSBuild.Task/2.0.18.2": {
+        "type": "package",
+        "build": {
+          "build/ILRepack.Lib.MSBuild.Task.targets": {}
+        }
+      }
+    },
+    "net5.0-windows7.0/win-x64": {
+      "ILRepack.Lib.MSBuild.Task/2.0.18.2": {
+        "type": "package",
+        "build": {
+          "build/ILRepack.Lib.MSBuild.Task.targets": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ILRepack.Lib.MSBuild.Task/2.0.18.2": {
+      "sha512": "lreK19MMDA/ekeqjLY4w171cG7+pHwjeTMHMNq6tghuhTOIOfHT+b/LTMj5jpfbJoR7J6AMD3yOYZoyY/2wtJA==",
+      "type": "package",
+      "path": "ilrepack.lib.msbuild.task/2.0.18.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ILRepack.Lib.MSBuild.Task.dll",
+        "build/ILRepack.Lib.MSBuild.Task.targets",
+        "ilrepack.lib.msbuild.task.2.0.18.2.nupkg.sha512",
+        "ilrepack.lib.msbuild.task.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "ILRepack.Lib.MSBuild.Task >= 2.0.18.2"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ignac\\.nuget\\packages\\": {},
@@ -51,6 +81,12 @@
     "frameworks": {
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "ILRepack.Lib.MSBuild.Task": {
+            "target": "Package",
+            "version": "[2.0.18.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

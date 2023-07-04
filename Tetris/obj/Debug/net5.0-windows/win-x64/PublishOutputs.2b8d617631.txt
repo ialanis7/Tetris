@@ -1,0 +1,2 @@
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Debug\net5.0-windows\win-x64\publish\Tetris.pdb
+C:\Users\ignac\source\repos\Tetris\Tetris\bin\Debug\net5.0-windows\win-x64\publish\Tetris.exe
